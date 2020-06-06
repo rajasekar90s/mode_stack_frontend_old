@@ -1,0 +1,11 @@
+<h2>Dashboard</h2>
+<h3>Articles</h3>
+<ul>
+    <li *ngFor="let userData of users">
+        {{userData.title}} {{userData.author}} {{userData.body}}
+    </li>
+</ul>
+
+<button (click)="logoutFunction()">Logout</button>
+
+<button (click)="newPost()">New Post</button>
